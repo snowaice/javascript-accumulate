@@ -6,7 +6,7 @@ describe('accumulate()', () => {
     expect(accumulate([], accumulator)).toEqual([]);
   });
 
-  xtest('accumulate squares', () => {
+  test('accumulate squares', () => {
     const accumulator = (number) => number * number;
     const result = accumulate([1, 2, 3], accumulator);
     expect(result).toEqual([1, 4, 9]);
