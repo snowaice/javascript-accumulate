@@ -4,5 +4,8 @@
 //
 
 export const accumulate = (tab, accumulator) => {
+
+    tab.forEach(element => accumulator(element));
+
     return tab;
 };
